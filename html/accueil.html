@@ -3,87 +3,248 @@
 <head>
     <title>Projet Web - Accueil</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="..\css\style.css">
 </head>
 
 <body>
 
-<header>
-    <a href="https://www.greenit.fr/">
-        <img src="../img/Logo_Efrei.png" alt="Logo_Efrei" width="150" height=auto>
-    </a>
+<header class="site-header">
+    <div class="header-inner">
 
-    <nav>
-        <a href=".prototype.html">Prototype page</a>
-        <a href="accueil.html">Accueil</a>
-        <a href="">Cours et formations</a>
-        <a href="">Equipe enseignante</a>
-        <a href="">Contact/À propos de nous</a>
-    </nav>
+        <div class="logo-block">
+            <div class="logo-img-wrapper">
+                <a href="accueil.html" >
+                    <img src="../img/Logo_Efrei.png" alt="Logo_Efrei" class="logo-img">
+                </a>
+            </div>
+            <div class="logo-text">
+            <span class="dept">Département</span>
+            <span class="dept-name">Informatique</span>
+            </div>
+        </div>
+        
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav">
+            <a href=".prototype.html" class="nav-link">Prototype page</a>
+            <a href="accueil.html" class="nav-link active">Accueil</a>
+            <a href="" class="nav-link">Cours et formations</a>
+            <a href="" class="nav-link">Equipe enseignante</a>
+            <a href="" class="nav-link nav-cta">Contact/À propos de nous</a>
+        </nav>
+    </div>
 </header>
 
-<section>
-    <h1>C'est quoi la Green IT ?</h1>
-
-    <p id="definition">
-        La sobriété numérique ou informatique verte, ou encore eco-IT, est un concept relativement nouveau 
-        et une nouvelle façon de penser.
-    </p>
-
-    <h2>Objectif principal de la Green IT :</h2>
-
-    <ol>
-        <li>Minimiser la consommation d'énergie</li>
-        <li>Réduire les émissions de gaz à effet de serre</li>
-    </ol>
-</section>
-
-<section>
-    <h2>Que représente l'impact du numérique sur l'environnement ?</h2>
-
-    <p>
-        L'empreinte carbone ou le contenu carbone d'une activité humaine est une mesure des émissions de 
-        <a href="https://fr.wikipedia.org/wiki/Gaz_%C3%A0_effet_de_serre">gaz à effet de serre</a> 
-        d'origine anthropique.
-        
-        Elle dépend des 
-        <a href="https://fr.wikipedia.org/wiki/Facteur_d%27%C3%A9mission">facteurs d'émission</a> 
-        et des 
-        <a href="https://fr.wikipedia.org/wiki/Source_d%27%C3%A9nergie">sources d'énergie</a> utilisées.
-        
-        Ces facteurs correspondent principalement à des émissions de CO2.
-    </p>
-</section>
-
-<section>
-    <h2>Impact énergétique sur le développement web</h2>
-
-    <div>
-        <h3>Pourquoi les sites web ont-ils une empreinte carbone ?</h3>
-
-        <ul>
-            <li>Chaque site web a sa propre empreinte carbone.</li>
-            <li>L'empreinte carbone correspond aux émissions de CO2 sur toute sa durée de vie.</li>
-            <li>Plus elle est élevée, plus l'impact environnemental est important.</li>
-        </ul>
+<section class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
     </div>
-
-    <div>
-        <h3>Que représente l'empreinte carbone d'une page web ?</h3>
-
-        <ul>
-            <li>Naviguer sur internet consomme de l'énergie électrique.</li>
-            <li>Une page web produit en moyenne 1,76 g de CO2.</li>
-            <li>La conception et le trafic influencent les émissions carbone.</li>
-        </ul>
+    <div class="hero-content">
+      <div class="hero-tag">Paris · Villejuif · Campus</div>
+      <h1 class="hero-title">
+        Façonner les ingénieurs<br/>
+        <em>& experts du numérique</em><br/>
+        de demain
+      </h1>
+      <p class="hero-sub">Le département Informatique de l'EFREI forme des professionnels de haut niveau en développement, cybersécurité, data science et systèmes embarqués.</p>
+      <div class="hero-actions">
+        <a href="formations.html" class="btn btn-primary">Découvrir les formations</a>
+        <a href="contact.html" class="btn btn-ghost">Candidater</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
 </section>
 
-<footer>
-    <p>©️2026 Mohamed HAMIDI.</p>
-    <p>Tous droits réservés.</p>
-    <a href="https://www.greenit.fr/">En savoir plus ?</a>
-</footer>
+<section class="stats-band">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" data-target="96">0</span><span class="stat-unit">%</span>
+        <span class="stat-label">Taux d'insertion<br/>professionnelle</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="2400">0</span><span class="stat-unit">+</span>
+        <span class="stat-label">Diplômés dans<br/>le secteur</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="80">0</span><span class="stat-unit">+</span>
+        <span class="stat-label">Entreprises<br/>partenaires</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="94">0</span><span class="stat-unit">%</span>
+        <span class="stat-label">Satisfaction<br/>étudiante</span>
+      </div>
+    </div>
+</section>
+
+<section class="section" id="formations-apercu">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Programmes</span>
+        <h2>Des formations<br/><em>au cœur du numérique</em></h2>
+        <p>Du post-bac au cycle ingénieur, des parcours d'excellence adaptés à chaque ambition.</p>
+      </div>
+      <div class="cards-grid">
+        <a href="formations.html" class="prog-card prog-card--bachelor">
+          <div class="prog-card__label">Bachelor</div>
+          <h3>Informatique<br/>Grade Licence</h3>
+          <p>Développement, bases de données, réseaux et IA. 3 ans pour maîtriser les fondamentaux.</p>
+          <div class="prog-card__arrow">→</div>
+        </a>
+        <a href="formations.html" class="prog-card prog-card--cyber">
+          <div class="prog-card__label">Bachelor</div>
+          <h3>Cybersécurité<br/>& Réseaux</h3>
+          <p>Devenez expert en sécurité des systèmes et des infrastructures numériques.</p>
+          <div class="prog-card__arrow">→</div>
+        </a>
+        <a href="formations.html" class="prog-card prog-card--ingenieur">
+          <div class="prog-card__label">Cycle Ingénieur</div>
+          <h3>Data Science<br/>& IA</h3>
+          <p>Maîtrisez le machine learning, le big data et les systèmes intelligents.</p>
+          <div class="prog-card__arrow">→</div>
+        </a>
+        <a href="formations.html" class="prog-card prog-card--dev">
+          <div class="prog-card__label">Bachelor</div>
+          <h3>Développeur<br/>Web & IA</h3>
+          <p>Full-stack, mobile et intelligence artificielle appliquée au web moderne.</p>
+          <div class="prog-card__arrow">→</div>
+        </a>
+      </div>
+      <div class="section-cta">
+        <a href="formations.html" class="btn btn-primary">Voir toutes les formations</a>
+      </div>
+    </div>
+</section>
+
+<section class="section section--dark" id="actualites">
+    <div class="section-inner">
+      <div class="section-header section-header--light">
+        <span class="section-tag">Actualités</span>
+        <h2>Événements<br/><em>& Actualités</em></h2>
+      </div>
+      <div class="news-grid">
+        <article class="news-card news-card--featured">
+          <div class="news-date">15 Mai 2025</div>
+          <div class="news-tag">Portes Ouvertes</div>
+          <h3>Journée Portes Ouvertes — Campus Villejuif</h3>
+          <p>Venez découvrir nos laboratoires, rencontrer nos enseignants et poser toutes vos questions sur les formations.</p>
+          <a href="#" class="news-link">S'inscrire →</a>
+        </article>
+        <article class="news-card">
+          <div class="news-date">22 Avril 2025</div>
+          <div class="news-tag">Conférence</div>
+          <h3>Tech Talk : L'IA générative en entreprise</h3>
+          <p>Conférence animée par des professionnels du secteur sur les usages concrets de l'IA.</p>
+          <a href="#" class="news-link">En savoir plus →</a>
+        </article>
+        <article class="news-card">
+          <div class="news-date">10 Avril 2025</div>
+          <div class="news-tag">CTF</div>
+          <h3>Capture The Flag — Édition Printemps</h3>
+          <p>Compétition de cybersécurité ouverte à tous les étudiants du département.</p>
+          <a href="#" class="news-link">Participer →</a>
+        </article>
+      </div>
+    </div>
+</section>
+
+<section class="section" id="temoignages">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Alumni</span>
+        <h2>Ils nous ont<br/><em>fait confiance</em></h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card active" id="t1">
+          <p class="quote">"EFREI m'a donné les outils techniques et humains pour décrocher un poste de Data Engineer chez une scale-up parisienne dès ma sortie d'école."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SL</div>
+            <div>
+              <strong>Sarah L.</strong>
+              <span>Promo 2023 — Data Engineer @ Dataiku</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="t2">
+          <p class="quote">"Le cycle ingénieur en Sécurité & Réseaux est intense, mais les projets en labo et les stages m'ont mis directement opérationnel en entreprise."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KM</div>
+            <div>
+              <strong>Karim M.</strong>
+              <span>Promo 2022 — Consultant Cybersécurité @ Capgemini</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="t3">
+          <p class="quote">"L'alternance m'a permis de financer mes études tout en acquérant une vraie expérience professionnelle. Je recommande vivement le Bachelor Dev Web."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AJ</div>
+            <div>
+              <strong>Amina J.</strong>
+              <span>Promo 2024 — Développeuse Full-Stack @ Société Générale</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button onclick="showTestimonial('t1')" class="t-dot active"></button>
+          <button onclick="showTestimonial('t2')" class="t-dot"></button>
+          <button onclick="showTestimonial('t3')" class="t-dot"></button>
+        </div>
+      </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-badge logo-badge--sm">ef<span>rei</span></div>
+          <p>Grande École d'Ingénieurs Généralistes<br/>et d'Experts du Numérique</p>
+          <p class="footer-address">30 Rue de la Bûtte Rouge, 94800 Villejuif<br/>Métro Ligne 7 — Louis Aragon</p>
+        </div>
+        <nav class="footer-nav">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="formations.html">Formations</a>
+          <a href="equipe.html">Équipe</a>
+          <a href="vie-etudiante.html">Vie Étudiante</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer-nav">
+          <h4>Formations</h4>
+          <a href="formations.html">Bachelor Informatique</a>
+          <a href="formations.html">Bachelor Cybersécurité</a>
+          <a href="formations.html">Bachelor Dev Web & IA</a>
+          <a href="formations.html">Cycle Ingénieur</a>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📞 +33 1 46 77 46 77</p>
+          <p>✉️ info-dept@efrei.fr</p>
+          <p>🕐 Lun–Ven : 9h–17h</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 EFREI — Département Informatique</p>
+        <nav class="footer-bottom-nav">
+          <a href="apropos.html">À propos du projet</a>
+          <a href="#">Mentions légales</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 
 </body>
 </html>
