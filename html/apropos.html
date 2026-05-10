@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos — EFREI Informatique</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="accueil.html" class="logo-block">
+        <div class="logo-img-wrapper">
+                <a href="accueil.html" >
+                    <img src="../img/Logo_Efrei.png" alt="Logo_Efrei" class="logo-img">
+                </a>
+            </div>
+        <div class="logo-text">
+          <span class="dept">Département</span>
+          <span class="dept-name">Informatique</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav">
+        <a href="accueil.html" class="nav-link">Accueil</a>
+        <a href="formations.html" class="nav-link">Formations</a>
+        <a href="equipe.html" class="nav-link">Équipe</a>
+        <a href="vie-etudiante.html" class="nav-link">Vie Étudiante</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-tag">Projet TI402</span>
+      <h1>À propos<br/><em>du projet</em></h1>
+      <p>Site vitrine du Département Informatique de l'EFREI — réalisé dans le cadre du projet web TI402.</p>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Contexte</span>
+        <h2>Le<br/><em>projet</em></h2>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2.5rem; box-shadow:var(--shadow); border:1px solid rgba(0,0,0,0.06); max-width:800px;">
+        <p style="font-size:1.05rem; line-height:1.8; color:var(--text-muted);">
+          Ce site web a été réalisé dans le cadre du <strong style="color:var(--text);">projet de programmation Web TI402</strong> (2025–2026), 
+          encadré par <strong style="color:var(--text);">CHIBOUT KHELIFA Lydia</strong> à l'EFREI Paris Panthéon-Assas Université.
+        </p>
+        <p style="font-size:1.05rem; line-height:1.8; color:var(--text-muted); margin-top:1rem;">
+          L'objectif était de concevoir et développer un <strong style="color:var(--text);">site vitrine du Département d'Informatique</strong> 
+          de l'EFREI, en utilisant uniquement <strong style="color:var(--text);">HTML5, CSS3 et JavaScript</strong> — 
+          sans frameworks ni bibliothèques externes.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:1.5rem;">
+          <span class="badge" style="font-size:0.85rem; padding:6px 16px;">HTML5</span>
+          <span class="badge" style="font-size:0.85rem; padding:6px 16px;">CSS3</span>
+          <span class="badge" style="font-size:0.85rem; padding:6px 16px;">JavaScript Vanilla</span>
+          <span class="badge" style="font-size:0.85rem; padding:6px 16px;">Responsive Design</span>
+          <span class="badge" style="font-size:0.85rem; padding:6px 16px;">W3C Valide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Équipe projet</span>
+        <h2>Membres<br/><em>du groupe</em></h2>
+        <p>Présentation de notre équipe et de ses taches.</p>
+      </div>
+      <div class="team-project-grid">
+
+        <div class="member-card">
+          <div class="member-avatar">P1</div>
+          <h3>Raphael Perricaud</h3>
+          <p class="role-label">Chef de projet · Lead Dev</p>
+          <p>Étudiant en cycle préparatoire. Responsable de la coordination du projet et du développement des pages principales.</p>
+          <div class="member-contrib">
+            <h4>Contributions</h4>
+            <ul>
+              <li>Page d'accueil (accueil.html)</li>
+              <li>Architecture CSS globale</li>
+              <li>Navigation & Header</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar" style="background:linear-gradient(135deg,#ef4444,#f97316);">P2</div>
+          <h3>Antoine Egnodou</h3>
+          <p class="role-label">Développeur · Designer</p>
+          <p>Étudiant en cycle preparatoire. En charge du design, des animations CSS/JS et de l'expérience utilisateur.</p>
+          <div class="member-contrib">
+            <h4>Contributions</h4>
+            <ul>
+              <li>Page Formations</li>
+              <li>Animations CSS</li>
+              <li>Responsive design</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--gray">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Architecture</span>
+        <h2>Structure<br/><em>du site</em></h2>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2.5rem; box-shadow:var(--shadow); border:1px solid rgba(0,0,0,0.06);">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.5rem;">
+          <div style="text-align:center; padding:1.5rem; background:var(--surface); border-radius:var(--radius); border:2px solid var(--accent-blue);">
+            <div style="font-size:2rem; margin-bottom:0.5rem;">🏠</div>
+            <strong>index.html</strong>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Page d'accueil<br/>(Niveau 0)</p>
+          </div>
+          <div style="text-align:center; padding:1.5rem; background:var(--surface); border-radius:var(--radius);">
+            <div style="font-size:2rem; margin-bottom:0.5rem;">🎓</div>
+            <strong>formations.html</strong>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Cours & Formations<br/>(Niveau 1)</p>
+          </div>
+          <div style="text-align:center; padding:1.5rem; background:var(--surface); border-radius:var(--radius);">
+            <div style="font-size:2rem; margin-bottom:0.5rem;">👨‍🏫</div>
+            <strong>equipe.html</strong>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Équipe enseignante<br/>(Niveau 1)</p>
+          </div>
+          <div style="text-align:center; padding:1.5rem; background:var(--surface); border-radius:var(--radius);">
+            <div style="font-size:2rem; margin-bottom:0.5rem;">🏫</div>
+            <strong>vie-etudiante.html</strong>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Vie Étudiante<br/>(Niveau 1)</p>
+          </div>
+          <div style="text-align:center; padding:1.5rem; background:var(--surface); border-radius:var(--radius);">
+            <div style="font-size:2rem; margin-bottom:0.5rem;">📞</div>
+            <strong>contact.html</strong>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Contact & Admissions<br/>(Niveau 1)</p>
+          </div>
+          <div style="text-align:center; padding:1.5rem; background:var(--surface); border-radius:var(--radius); border:2px solid var(--accent);">
+            <div style="font-size:2rem; margin-bottom:0.5rem;">ℹ️</div>
+            <strong>apropos.html</strong>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">À propos du projet<br/>(Niveau 1)</p>
+          </div>
+        </div>
+        <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--surface-2);">
+          <h4 style="margin-bottom:0.75rem;">Fichiers techniques</h4>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+            <span class="badge">style.css</span>
+            <span class="badge">main.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+            <div class="logo-block">
+            <div class="logo-img-wrapper">
+                <a href="accueil.html" >
+                    <img src="../img/Logo_Efrei.png" alt="Logo_Efrei" class="logo-img">
+                </a>
+            </div>
+            <div class="logo-text">
+            <span class="dept">Département</span>
+            <span class="dept-name">Informatique</span>
+            </div>
+        </div>
+          <p>Grande École d'Ingénieurs Généralistes<br/>et d'Experts du Numérique</p>
+          <p class="footer-address">30 Rue de la Bûtte Rouge, 94800 Villejuif</p>
+        </div>
+        <nav class="footer-nav">
+          <h4>Navigation</h4>
+          <a href="accueil.html">Accueil</a>
+          <a href="formations.html">Formations</a>
+          <a href="equipe.html">Équipe</a>
+          <a href="vie-etudiante.html">Vie Étudiante</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer-nav">
+          <h4>Projet</h4>
+          <a href="apropos.html">À propos</a>
+          <a href="https://github.com/Rayoogo/ProjetWeb">GitHub</a>
+        </nav>
+        <div class="footer-contact">
+          <h4>Cours</h4>
+          <p>TI402 — 2025/2026</p>
+          <p>Prof. Mme. CHIBOUT KHELIFA Lydia</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 EFREI — Projet TI402 — Département Informatique</p>
+        <nav class="footer-bottom-nav">
+          <a href="apropos.html">À propos du projet</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
