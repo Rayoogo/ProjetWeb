@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Projet Web - Cours et formations</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="..\css\style.css">
+</head>
+
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+
+        <div class="logo-block">
+            <div class="logo-img-wrapper">
+                <a href="accueil.html" >
+                    <img src="../img/Logo_Efrei.png" alt="Logo_Efrei" class="logo-img">
+                </a>
+            </div>
+            <div class="logo-text">
+            <span class="dept">Département</span>
+            <span class="dept-name">Informatique</span>
+            </div>
+        </div>
+        
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav">
+            <a href=".prototype.html" class="nav-link">Prototype page</a>
+            <a href="accueil.html" class="nav-link">Accueil</a>
+            <a href="formations.html" class="nav-link">Cours et formations</a>
+            <a href="equipe.html" class="nav-link">Equipe enseignante</a>
+            <a href="vie-etudiante.html" class="nav-link">Vie Étudiante</a>
+            <a href="contact.html" class="nav-link active nav-cta">Contact</a>
+        </nav>
+    </div> 
+    </header>
+
+
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <span class="section-tag">Admissions 2025</span>
+            <h1>Contact<br/><em>& Admissions</em></h1>
+            <p>Nous sommes là pour répondre à toutes vos questions sur les formations et les procédures d'admission.</p>
+        </div>
+    </section>
+
+    <section class="section">
+    <div class="section-inner">
+      <div class="contact-layout">
+
+        <!-- Infos -->
+        <div class="contact-info-card">
+          <h3>Nous trouver</h3>
+          <p>Campus EFREI, Villejuif</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <strong>Adresse</strong>
+              <span>30 Rue de la Bûtte Rouge<br/>94800 Villejuif, France</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <strong>Téléphone</strong>
+              <span>+33 1 46 77 46 77</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <span>info-dept@efrei.fr</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Horaires</strong>
+              <span>Lun–Ven : 9h–17h30</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🚇</div>
+            <div class="contact-detail-text">
+              <strong>Transports</strong>
+              <span>Métro Ligne 7 — Louis Aragon<br/>Métro Ligne 15 (Grand Paris Express)</span>
+            </div>
+          </div>
+
+          <div class="admission-steps">
+            <h4>Procédure d'admission</h4>
+            <div class="adm-step">
+              <div class="adm-step-num">1</div>
+              <p><strong style="color:var(--white);">Post-Bac</strong> — Dossier via Parcoursup (mars–juin)</p>
+            </div>
+            <div class="adm-step">
+              <div class="adm-step-num">2</div>
+              <p><strong style="color:var(--white);">Prépa / Bac+2</strong> — Concours Puissance Alpha</p>
+            </div>
+            <div class="adm-step">
+              <div class="adm-step-num">3</div>
+              <p><strong style="color:var(--white);">Parallèle</strong> — Admissions Bac+2/+3 (dossier + entretien)</p>
+            </div>
+            <div class="adm-step">
+              <div class="adm-step-num">4</div>
+              <p><strong style="color:var(--white);">International</strong> — Dossier spécifique avec équivalences</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div class="contact-form-card">
+            <h3>Nous écrire</h3>
+            <p>Remplissez ce formulaire et nous vous répondrons sous 48h ouvrées.</p>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nom complet *</label>
+                  <input type="text" id="name" placeholder="Antoine Egnodou" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" placeholder="antoine.egnodou@efrei.net" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" id="phone" placeholder="+33 6 50 87 60 10" />
+                </div>
+                <div class="form-group">
+                  <label for="niveau">Niveau actuel *</label>
+                  <select id="niveau" required>
+                    <option value="">Sélectionnez…</option>
+                    <option>Terminale</option>
+                    <option>BTS / DUT / BUT (Bac+2)</option>
+                    <option>Licence (Bac+3)</option>
+                    <option>Classes Prépa</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="formation">Formation souhaitée</label>
+                <select id="formation">
+                  <option value="">Sélectionnez…</option>
+                  <option>Bachelor Informatique</option>
+                  <option>Bachelor Cybersécurité & Réseaux</option>
+                  <option>Bachelor Développeur Web & IA</option>
+                  <option>Cycle Ingénieur</option>
+                  <option>Pas encore décidé(e)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Votre message *</label>
+                <textarea id="message" placeholder="Décrivez votre projet, vos questions ou votre profil…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Envoyer le message</button>
+            </form>
+        </div>
+
+    <div class="faq-section">
+            <h3>Questions fréquentes</h3>
+            <div class="faq-list">
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  Quels sont les frais de scolarité ?
+                  <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Les frais varient selon le programme et la modalité (initiale ou alternance). En alternance, les frais peuvent être pris en charge par l'OPCO de l'employeur. Contactez-nous pour un devis personnalisé.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  L'alternance est-elle disponible dès la 1re année ?
+                  <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Pour les Bachelors, l'alternance peut démarrer dès la 2e année. Notre service des relations entreprises vous accompagne pour trouver votre maître d'apprentissage.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  Y a-t-il des logements étudiants près du campus ?
+                  <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Le campus de Villejuif est bien desservi par la ligne 7 (20 min du centre de Paris). Des résidences étudiantes partenaires sont disponibles à proximité, ainsi que des logements CROUS.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  Peut-on faire une partie du cursus à l'étranger ?
+                  <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Oui, l'EFREI dispose de nombreux accords avec des universités partenaires en Europe, Amérique du Nord et Asie. Des semestres ou années d'échange sont possibles dans le cadre du cycle ingénieur.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  Les diplômes sont-ils reconnus par l'État ?
+                  <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Tous nos diplômes sont reconnus par l'État. Le diplôme d'ingénieur est accrédité par la CTI (Commission des Titres d'Ingénieur) et les Bachelors confèrent un grade de Licence.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" style="padding: 3rem 2rem;">
+    <div class="section-inner">
+      <div class="section-header section-header--light">
+        <span class="section-tag">Localisation</span>
+        <h2>Où nous <em>trouver</em> ?</h2>
+      </div>
+      <div style="border-radius:var(--radius-lg); overflow:hidden; border:1px solid rgba(255,255,255,0.08);">
+        <iframe
+          title="Campus EFREI Villejuif"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.6423316851296!2d2.3589876967895536!3d48.78871820000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e24e04a9c3%3A0xc55cb3e676f95321!2sEfrei!5e0!3m2!1sfr!2sfr!4v1778411584072!5m2!1sfr!2sfr"
+          width="100%" height="320" style="border:0; display:block;"
+          loading="lazy">
+        </iframe>
+      </div>
+      <p style="color:rgba(255,255,255,0.4); font-size:0.78rem; margin-top:0.75rem; text-align:center;">
+        30-32 Av. de la République, 94800 Villejuif — Métro Ligne 7 ou Tramway Ligne 7 : Villejuif - Louis Aragon
+      </p>
+    </div>
+      </p>
+    </div>
+  </section>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-badge logo-badge--sm">ef<span>rei</span></div>
+          <p>Grande École d'Ingénieurs Généralistes<br/>et d'Experts du Numérique</p>
+          <p class="footer-address">30 Rue de la Bûtte Rouge, 94800 Villejuif</p>
+        </div>
+        <nav class="footer-nav">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="formations.html">Formations</a>
+          <a href="equipe.html">Équipe</a>
+          <a href="vie-etudiante.html">Vie Étudiante</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer-nav">
+          <h4>Admission</h4>
+          <a href="#">Parcoursup</a>
+          <a href="#">Puissance Alpha</a>
+          <a href="#">Admissions parallèles</a>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📞 +33 1 46 77 46 77</p>
+          <p>✉️ info-dept@efrei.fr</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 EFREI — Département Informatique</p>
+        <nav class="footer-bottom-nav">
+          <a href="apropos.html">À propos du projet</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

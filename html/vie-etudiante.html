@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Projet Web - Accueil</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="..\css\style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+
+            <div class="logo-block">
+                <div class="logo-img-wrapper">
+                    <a href="accueil.html" >
+                        <img src="../img/Logo_Efrei.png" alt="Logo_Efrei" class="logo-img">
+                    </a>
+                </div>
+                <div class="logo-text">
+                <span class="dept">Département</span>
+                <span class="dept-name">Informatique</span>
+                </div>
+            </div>
+            
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav">
+                <a href=".prototype.html" class="nav-link">Prototype page</a>
+                <a href="accueil.html" class="nav-link">Accueil</a>
+                <a href="formations.html" class="nav-link">Cours et formations</a>
+                <a href="equipe.html" class="nav-link">Equipe enseignante</a>
+                <a href="vie-etudiante.html" class="nav-link active">Vie Étudiante</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-tag">Campus Villejuif</span>
+      <h1>Vie Étudiante<br/><em>& Campus</em></h1>
+      <p>Un campus dynamique, des associations actives, et des équipements de pointe pour apprendre et innover.</p>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+    <div class="carousel">
+        <div class="slides">
+            <img src="../img/img1.png" alt="Campus">
+            <img src="../img/img2.jpg" alt="Étudiants">
+            <img src="../img/img3.jpg" alt="Cours">
+        </div>
+
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+    </div>
+</section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Équipements</span>
+        <h2>Des infrastructures<br/><em>à la hauteur de vos ambitions</em></h2>
+      </div>
+      <div class="campus-grid">
+        <div class="campus-card">
+          <div class="campus-card__visual campus-card__visual--lab">🖥️</div>
+          <div class="campus-card__body">
+            <h3>Labs Informatiques</h3>
+            <p>12 salles équipées de machines haute performance, accès à des clusters GPU pour le Deep Learning, et logiciels professionnels (VMware, Docker, Unity…).</p>
+          </div>
+        </div>
+        <div class="campus-card">
+          <div class="campus-card__visual campus-card__visual--cowork">🤝</div>
+          <div class="campus-card__body">
+            <h3>Espaces Coworking</h3>
+            <p>Zones de travail collaboratif ouvertes 7j/7, salles de projet réservables, et espaces de détente connectés pour favoriser l'innovation collective.</p>
+          </div>
+        </div>
+        <div class="campus-card">
+          <div class="campus-card__visual campus-card__visual--platform">📚</div>
+          <div class="campus-card__body">
+            <h3>Plateformes Pédagogiques</h3>
+            <p>Accès illimité à OpenClassrooms, LinkedIn Learning, Coursera for Campus, GitHub Education et Stack Overflow for Teams.</p>
+          </div>
+        </div>
+        <div class="campus-card">
+          <div class="campus-card__visual campus-card__visual--club">🔬</div>
+          <div class="campus-card__body">
+            <h3>Lab Innovation</h3>
+            <p>Espace FabLab avec imprimantes 3D, matériel IoT/Arduino/Raspberry Pi, casques VR et station de motion capture pour les projets créatifs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Associations</span>
+        <h2>Clubs<br/><em>& Associations</em></h2>
+        <p>Des communautés étudiantes passionnées pour prolonger l'apprentissage au-delà des cours.</p>
+      </div>
+      <div class="clubs-grid">
+        <div class="club-card">
+          <div class="club-icon">🏆</div>
+          <h4>CTF Club</h4>
+          <p>Compétitions de cybersécurité, entraînements hebdomadaires et participation aux grands CTF nationaux.</p>
+        </div>
+        <div class="club-card">
+          <div class="club-icon">🤖</div>
+          <h4>IA & Robotique</h4>
+          <p>Projets ML, ateliers deep learning, et construction de robots pour des compétitions internationales.</p>
+        </div>
+        <div class="club-card">
+          <div class="club-icon">💻</div>
+          <h4>Dev Club</h4>
+          <p>Hackathons, projets open-source, workshops sur les dernières technologies et langages émergents.</p>
+        </div>
+        <div class="club-card">
+          <div class="club-icon">🎮</div>
+          <h4>E-Sport</h4>
+          <p>Équipes compétitives, salle dédiée avec stations gaming, tournois inter-écoles et LAN parties.</p>
+        </div>
+        <div class="club-card">
+          <div class="club-icon">🌐</div>
+          <h4>Web3 & Blockchain</h4>
+          <p>Exploration des technos décentralisées : smart contracts, DeFi, NFT et cryptomonnaies.</p>
+        </div>
+        <div class="club-card">
+          <div class="club-icon">📱</div>
+          <h4>App Factory</h4>
+          <p>Studio de développement mobile : iOS, Android, et applications cross-platform avec Flutter/React Native.</p>
+        </div>
+        <div class="club-card">
+          <div class="club-icon">🔮</div>
+          <h4>XR Lab</h4>
+          <p>Réalité virtuelle et augmentée : création d'expériences immersives avec Unity, Unreal Engine et Blender.</p>
+        </div>
+        <div class="club-card">
+          <div class="club-icon">🌱</div>
+          <h4>GreenTech</h4>
+          <p>Numérique responsable, green computing et projets tech au service de l'environnement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Showcase</span>
+        <h2>Projets<br/><em>étudiants</em></h2>
+        <p>Une sélection des meilleurs projets réalisés par nos étudiants.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="prog-card prog-card--ingenieur">
+          <div class="prog-card__label">Promo 2024 — Bachelor Dev Web</div>
+          <h3>EcoTrack</h3>
+          <p>Application web de suivi de l'empreinte carbone personnelle, avec analyse IA et recommandations personnalisées.</p>
+          <div class="prog-card__arrow">🌍</div>
+        </div>
+        <div class="prog-card prog-card--cyber">
+          <div class="prog-card__label">Promo 2024 — Cybersécurité</div>
+          <h3>SecureVault</h3>
+          <p>Gestionnaire de mots de passe chiffré de bout en bout, avec authentification biométrique et audit de sécurité.</p>
+          <div class="prog-card__arrow">🔐</div>
+        </div>
+        <div class="prog-card prog-card--bachelor">
+          <div class="prog-card__label">Promo 2023 — Cycle Ingénieur</div>
+          <h3>MediAssist AI</h3>
+          <p>Plateforme d'aide au diagnostic médical basée sur le machine learning, développée en partenariat avec un hôpital parisien.</p>
+          <div class="prog-card__arrow">🏥</div>
+        </div>
+        <div class="prog-card prog-card--dev">
+          <div class="prog-card__label">Promo 2024 — Data Science</div>
+          <h3>TrafficFlow</h3>
+          <p>Système de prédiction et d'optimisation du trafic routier en temps réel pour la Métropole du Grand Paris.</p>
+          <div class="prog-card__arrow">🚦</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section section--dark">
+    <div class="section-inner">
+      <div class="section-header section-header--light">
+        <span class="section-tag">Alumni</span>
+        <h2>Ce qu'ils<br/><em>en disent</em></h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card active" id="t1" style="color:var(--text);">
+          <p class="quote" style="color:rgba(255,255,255,0.85);">"La vie sur le campus EFREI est incroyablement stimulante. Entre le CTF Club et les hackathons, j'ai appris autant en dehors des cours qu'en classe."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">TN</div>
+            <div>
+              <strong style="color:var(--white);">Thomas N.</strong>
+              <span>Étudiant 3e année — Bachelor Cybersécurité</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="t2">
+          <p class="quote" style="color:rgba(255,255,255,0.85);">"Les labs sont vraiment bien équipés. On a accès à des GPU pour nos projets ML, c'est rare pour une école et ça fait une vraie différence."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">FO</div>
+            <div>
+              <strong style="color:var(--white);">Fatou O.</strong>
+              <span>Étudiante 4e année — Cycle Ingénieur Data Science</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="t3">
+          <p class="quote" style="color:rgba(255,255,255,0.85);">"Je sais pas trop quoi dire. C'est dur d'avoir une vie étudiante à l'EFREI, je trouve qu'on a trop de cours !"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RP</div>
+            <div>
+              <strong style="color:var(--white);">Raphael P.</strong>
+              <span>Étudiant 2e année — Cycle Préparatoire</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button onclick="showTestimonial('t1')" class="t-dot active"></button>
+          <button onclick="showTestimonial('t2')" class="t-dot"></button>
+          <button onclick="showTestimonial('t3')" class="t-dot"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-block">
+            <div class="logo-img-wrapper">
+                <a href="accueil.html" >
+                    <img src="../img/Logo_Efrei.png" alt="Logo_Efrei" class="logo-img">
+                </a>
+            </div>
+            <div class="logo-text">
+            <span class="dept">Département</span>
+            <span class="dept-name">Informatique</span>
+            </div>
+        </div>
+          <p>Grande École d'Ingénieurs Généralistes<br/>et d'Experts du Numérique</p>
+          <p class="footer-address">30 Rue de la Bûtte Rouge, 94800 Villejuif</p>
+        </div>
+        <nav class="footer-nav">
+          <h4>Navigation</h4>
+          <a href="accueil.html">Accueil</a>
+          <a href="formations.html">Formations</a>
+          <a href="equipe.html">Équipe</a>
+          <a href="vie-etudiante.html">Vie Étudiante</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer-nav">
+          <h4>Associations</h4>
+          <a href="#">CTF Club</a>
+          <a href="#">IA & Robotique</a>
+          <a href="#">Dev Club</a>
+          <a href="#">E-Sport</a>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📞 +33 1 46 77 46 77</p>
+          <p>✉️ info-dept@efrei.fr</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 EFREI — Département Informatique</p>
+        <nav class="footer-bottom-nav">
+          <a href="apropos.html">À propos du projet</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
