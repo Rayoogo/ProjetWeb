@@ -228,10 +228,10 @@ em {font-style: normal; color: var(--accent-blue);}
   display: inline-block;
   font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em;
   text-transform: uppercase; color: var(--accent);
-  border: 1px solid rgba(232,255,42,0.3);
+  border: 1px solid var(--accent);
   padding: 6px 14px; border-radius: 100px;
   animation: fadeUp 0.6s ease both;
-  margin-bottom: 0%; padding-bottom: 0%
+  margin-bottom: 0%; padding-bottom: 0%;
 }
 
 .hero-title {
@@ -345,7 +345,7 @@ em {font-style: normal; color: var(--accent-blue);}
 .section-header--light h2 { color: var(--white); }
 .section-header--light p { color: rgba(255,255,255,0.55); }
 .section-header--light .section-tag {
-  color: var(--accent); border-color: rgba(232,255,42,0.3);
+  color: var(--accent); border-color: var(--accent);
 }
 
 .section-tag {
