@@ -30,7 +30,7 @@ body {
   margin: 0;
 }
 
-a {text-decoration: underline; color: inherit;}
+a {text-decoration: none; color: inherit;}
 img {max-width: 100%; display: block;}
 button {cursor: pointer; border: none; background: none; font: inherit;}
 
